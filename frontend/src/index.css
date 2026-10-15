@@ -1,0 +1,39 @@
+:root {
+  --ink: #272822;
+  --muted: #73756e;
+  --line: #e7e8e3;
+  --sans: 'Segoe UI', Arial, sans-serif;
+  --mono: 'SFMono-Regular', Consolas, monospace;
+
+  font-family: var(--sans);
+  color: var(--ink);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+:is(a, button, input, textarea):focus-visible {
+  outline: 2px solid #62665b;
+  outline-offset: 3px;
+}
+
+::selection {
+  color: var(--ink);
+  background: #e4e5df;
+}
